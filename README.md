@@ -7,6 +7,9 @@ This project is a simple implementation of a control panel using FastAPI. Writte
 
 # Install
 
+> [!WARNING]
+> **You must have python >= 3.10**
+
 * Clone repository:
 
   ```bash
@@ -15,11 +18,11 @@ This project is a simple implementation of a control panel using FastAPI. Writte
 
 * Create venv:
   
-  * for UNIX (linux, macos)
+  * For UNIX (linux, macos)
     ```bash
     python3 -m venv venv && source venv/bin/activate
     ```
-  * for Windows
+  * For Windows
     ```bash
     python3 -m venv venv && venv\Scripts\activate
     ```
@@ -39,6 +42,9 @@ This project is a simple implementation of a control panel using FastAPI. Writte
 Этот проект представляет собой простую реализацию панели управления с использованием FastAPI. Написанная для моего Raspberry pi.
 
 # Установка
+
+> [!WARNING]
+> **You must have python >= 3.10**
 
 * Клонируйте репозиторий:
 
@@ -61,7 +67,6 @@ This project is a simple implementation of a control panel using FastAPI. Writte
   ```bash
   pip install -r src/requirements.txt
   ```
-* Настройте файл: config.py
 
 * Запустите:
 
