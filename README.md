@@ -29,13 +29,13 @@ This project is a simple implementation of a control panel using FastAPI. Writte
 
 * Install requirements:
   ```bash
-  pip install -r src/requirements.txt
+  pip install -r requirements.txt
   ```
 
 * Run main.py:
 
   ```bash
-  cd src && python main.py
+  python main.py
   ```
 
 ## Описание RU
@@ -65,11 +65,11 @@ This project is a simple implementation of a control panel using FastAPI. Writte
 
 * Установите библиотеки:
   ```bash
-  pip install -r src/requirements.txt
+  pip install -r requirements.txt
   ```
 
 * Запустите:
 
   ```bash
-  cd src && python main.py
+  python main.py
   ```
