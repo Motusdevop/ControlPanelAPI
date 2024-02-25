@@ -3,16 +3,15 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-import uvicorn
-
-from models.models import ButtonModel, ButtonsStage
+from src.models.models import ButtonModel, ButtonsStage
+# from src.config import settings
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/static", StaticFiles(directory="src/static"), name="static")
 
 
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="src/templates")
 
 stage = ButtonsStage(one = False, two = False)
 
@@ -34,7 +33,6 @@ async def change(data: ButtonModel):
         case 'two':
             stage.two = bool(data.on)
 
-    return {'status': 'OK'}
+    print(f"[INFO!] State {data.id}: Сhanged from '{not stage.one}' to '{stage.one}'")
 
-if __name__ == '__main__':
-    uvicorn.run('main:app', host='0.0.0.0')
+    return {'status': 'OK'}
